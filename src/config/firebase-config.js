@@ -1,16 +1,15 @@
-import admin from 'firebase-admin';
-import { readFile } from 'fs/promises';
+import admin from "firebase-admin";
 
-// Read service account file
+if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
+  throw new Error("FIREBASE_SERVICE_ACCOUNT env variable is missing");
+}
+
 const serviceAccount = JSON.parse(
-  await readFile(new URL('../../firebase/firebase-service-account.json', import.meta.url))
+  process.env.FIREBASE_SERVICE_ACCOUNT
 );
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount),
 });
 
 export default admin;
-
-
-//../../firebase/firebase-service-account.json
