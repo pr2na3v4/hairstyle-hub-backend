@@ -14,7 +14,7 @@ import verifyFirebaseToken, { verifyTokenOptional } from '../middleware/authMidd
 const router = express.Router();
 
 // --- Public Haircut Routes ---
-router.get("/", getAllHaircuts);
+router.get("/haircuts", getAllHaircuts);
 router.get("/:id", getHaircutById);
 
 // --- Protected Admin Routes ---
