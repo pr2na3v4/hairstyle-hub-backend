@@ -1,5 +1,4 @@
-# Secrets
-.env
-node_modules/
 firebase-service-account.json
 firebase/
+*.env
+node_modules/
