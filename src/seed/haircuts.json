@@ -1,0 +1,1774 @@
+[
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a6c"
+  },
+  "name": "Modern Pompadour",
+  "imageUrl": "https://i.pinimg.com/736x/f3/81/35/f38135592bd184b5ad0a8c7f5f4cde35.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Pompadour",
+  "tags": [
+    "classic",
+    "volume",
+    "stylish",
+    "elegant"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a6d"
+  },
+  "name": "Curly Top Fade",
+  "imageUrl": "https://i.pinimg.com/1200x/b1/18/e1/b118e14a6810bbb5675a38c7d9ea67fa.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Heart",
+    "Round"
+  ],
+  "hairLength": "Medium",
+  "style": "Fade",
+  "tags": [
+    "bold",
+    "contrast",
+    "fashionable",
+    "urban"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a6e"
+  },
+  "name": "Textured Quiff",
+  "imageUrl": "https://i.pinimg.com/736x/33/24/d1/3324d16bff928d8b93afd8421d4e58c6.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Diamond"
+  ],
+  "hairLength": "Medium",
+  "style": "Quiff",
+  "tags": [
+    "volume",
+    "textured",
+    "modern",
+    "stylish"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a6f"
+  },
+  "name": "French Crop",
+  "imageUrl": "https://i.pinimg.com/736x/da/43/b3/da43b3ae1dc0259ca34c9133c74f42b7.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Heart"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "european",
+    "minimal",
+    "clean",
+    "french"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a70"
+  },
+  "name": "Slick Back Undercut",
+  "imageUrl": "https://i.pinimg.com/736x/8f/83/72/8f8372a83235a965c9bde0438dd41821.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Slick Back",
+  "tags": [
+    "professional",
+    "sharp",
+    "formal",
+    "business"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a71"
+  },
+  "name": "Layered Curls",
+  "imageUrl": "https://i.pinimg.com/736x/08/c9/a1/08c9a199dc98acd453ed2727857714a3.jpg",
+  "hairType": [
+    "Curly",
+    "Coily"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Long",
+  "style": "Layered",
+  "tags": [
+    "natural",
+    "curly",
+    "volume",
+    "layered"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a72"
+  },
+  "name": "Buzz Cut with Beard",
+  "imageUrl": "https://i.pinimg.com/1200x/35/1c/ba/351cba29a58a23281b8bb4ffd23214cc.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Square",
+    "Round",
+    "Oval"
+  ],
+  "hairLength": "Short",
+  "style": "Buzz Cut",
+  "tags": [
+    "minimal",
+    "bold",
+    "confident",
+    "low maintenance"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a73"
+  },
+  "name": "Modern Mullet",
+  "imageUrl": "https://i.pinimg.com/1200x/58/39/d4/5839d4ca4e4035a47d1cef7d5e993794.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Square",
+    "Oval"
+  ],
+  "hairLength": "Long",
+  "style": "Undercut",
+  "tags": [
+    "vintage",
+    "modern",
+    "bold",
+    "statement"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a74"
+  },
+  "name": "Textured Afro",
+  "imageUrl": "https://i.pinimg.com/736x/81/e6/8a/81e68a748ca9b586e7989422e8aa48ec.jpg",
+  "hairType": [
+    "Coily",
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Medium",
+  "style": "Afro",
+  "tags": [
+    "natural",
+    "textured",
+    "bold",
+    "cultural"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a75"
+  },
+  "name": "Taper Fade with Design",
+  "imageUrl": "https://i.pinimg.com/736x/fd/c4/43/fdc443d299433542fe8b83daf4674fe1.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "creative",
+    "design",
+    "barber",
+    "artistic"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a76"
+  },
+  "name": "Messy Textured Style",
+  "imageUrl": "https://i.pinimg.com/736x/2e/77/1d/2e771dbb7511753310daf80bb35c94bc.jpg",
+  "hairType": [
+    "Wavy",
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Heart"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "messy",
+    "casual",
+    "beach",
+    "effortless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a77"
+  },
+  "name": "Professional Comb Over",
+  "imageUrl": "https://i.pinimg.com/1200x/68/82/bb/6882bbaf3ccc736045151f10bb398301.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Diamond"
+  ],
+  "hairLength": "Medium",
+  "style": "Slick Back",
+  "tags": [
+    "professional",
+    "office",
+    "formal",
+    "business"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a78"
+  },
+  "name": "High Top Fade",
+  "imageUrl": "https://i.pinimg.com/736x/98/c4/e0/98c4e0f99c16eee4937a84e2c64959f2.jpg",
+  "hairType": [
+    "Straight",
+    "Coily"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Fade",
+  "tags": [
+    "urban",
+    "bold",
+    "statement",
+    "retro"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a79"
+  },
+  "name": "Wavy Textured Crop",
+  "imageUrl": "https://i.pinimg.com/originals/eb/5a/df/eb5adf706b1b2a2674b43d306dc147c2.png",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round",
+    "Heart"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "beach",
+    "casual",
+    "youthful",
+    "modern"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7a"
+  },
+  "name": "Classic Side Part",
+  "imageUrl": "https://i.pinimg.com/1200x/3c/56/83/3c5683682283700ae5af56e6c50f41fa.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Diamond"
+  ],
+  "hairLength": "Medium",
+  "style": "Slick Back",
+  "tags": [
+    "vintage",
+    "classic",
+    "formal",
+    "professional"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7b"
+  },
+  "name": "Curly Fringe",
+  "imageUrl": "https://i.pinimg.com/736x/42/e3/5b/42e35b36ca4c69f884ef13cae70748c5.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "youthful",
+    "trendy",
+    "curly",
+    "modern"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7c"
+  },
+  "name": "Long Wavy Layers",
+  "imageUrl": "https://i.pinimg.com/1200x/cc/d5/b2/ccd5b291628a2713740512580bb1cffe.jpg",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Long",
+  "style": "Layered",
+  "tags": [
+    "bohemian",
+    "artistic",
+    "flowing",
+    "natural"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7d"
+  },
+  "name": "Hard Part Comb Over",
+  "imageUrl": "https://i.pinimg.com/1200x/2c/5b/e2/2c5be25cce0d4a0a27cd28f911077ebf.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Slick Back",
+  "tags": [
+    "sharp",
+    "defined",
+    "professional",
+    "clean"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7e"
+  },
+  "name": "Curly High Top",
+  "imageUrl": "https://i.pinimg.com/736x/62/58/28/625828f923ffc84ec63751edff89ce3f.jpg",
+  "hairType": [
+    "Curly",
+    "Coily"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Afro",
+  "tags": [
+    "bold",
+    "statement",
+    "cultural",
+    "urban"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a7f"
+  },
+  "name": "Messy Bun",
+  "imageUrl": "https://i.pinimg.com/1200x/c6/88/62/c688624b1acdcf0ad0e094d3298c0117.jpg",
+  "hairType": [
+    "Wavy",
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Long",
+  "style": "Layered",
+  "tags": [
+    "casual",
+    "effortless",
+    "artistic",
+    "bohemian"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a80"
+  },
+  "name": "Textured Spiky Style",
+  "imageUrl": "https://i.pinimg.com/1200x/d0/85/a5/d085a554e732875b70e8a72bdb564a97.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "edgy",
+    "youthful",
+    "modern",
+    "bold"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a81"
+  },
+  "name": "Classic Taper Cut",
+  "imageUrl": "https://i.pinimg.com/736x/29/3e/44/293e442db9274f38aabe6ee1cfac052a.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square",
+    "Round"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "classic",
+    "clean",
+    "professional",
+    "timeless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a82"
+  },
+  "name": "Long Curly Layers",
+  "imageUrl": "https://i.pinimg.com/736x/b8/a2/40/b8a240f381c0391bd92a416fc0a8f414.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Long",
+  "style": "Layered",
+  "tags": [
+    "romantic",
+    "flowing",
+    "natural",
+    "bohemian"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a83"
+  },
+  "name": "Modern Caesar Cut",
+  "imageUrl": "https://i.pinimg.com/736x/33/b3/17/33b3173d4f579639d2f3618f2ed0ffc3.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Square",
+    "Oval"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "roman",
+    "classic",
+    "clean",
+    "sharp"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a84"
+  },
+  "name": "Textured Fringe Cut",
+  "imageUrl": "https://i.pinimg.com/736x/7d/1e/1b/7d1e1b171ff401dcda1530a475fe7cdf.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Heart"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "youthful",
+    "modern",
+    "trendy",
+    "textured"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a85"
+  },
+  "name": "Curly Undercut",
+  "imageUrl": "https://i.pinimg.com/originals/d9/17/c7/d917c72a2a4a2d66503ea6e4424ef93b.png",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Undercut",
+  "tags": [
+    "contrast",
+    "bold",
+    "modern",
+    "edgy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a86"
+  },
+  "name": "Low Fade with Design",
+  "imageUrl": "https://i.pinimg.com/736x/0d/c7/47/0dc747d728265ef6650b7cc33b4a7f85.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "artistic",
+    "creative",
+    "barber",
+    "detailed"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a87"
+  },
+  "name": "Textured Mohawk",
+  "imageUrl": "https://i.pinimg.com/1200x/e5/61/c3/e561c31f542cdf2f3ea772d9e398fffd.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Undercut",
+  "tags": [
+    "edgy",
+    "bold",
+    "statement",
+    "rebellious"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a88"
+  },
+  "name": "Wavy Beach Style",
+  "imageUrl": "https://i.pinimg.com/736x/fe/24/55/fe2455a9d713169ba07e6a8e8914268f.jpg",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round",
+    "Heart"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "beach",
+    "casual",
+    "summer",
+    "effortless"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a89"
+  },
+  "name": "High Fade with Texture",
+  "imageUrl": "https://i.pinimg.com/736x/3b/e4/a2/3be4a296fc5e0deadd9cc4d995ccb4ee.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "modern",
+    "sharp",
+    "urban",
+    "trendy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8a"
+  },
+  "name": "Classic Comb Over",
+  "imageUrl": "https://i.pinimg.com/736x/a9/e9/14/a9e914ca30a2e9920079687897473716.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Slick Back",
+  "tags": [
+    "vintage",
+    "classic",
+    "professional",
+    "timeless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8b"
+  },
+  "name": "Textured Curly Top",
+  "imageUrl": "https://i.pinimg.com/736x/55/61/90/55619008ca2b8ea0e60dd152294f59f3.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "natural",
+    "defined",
+    "modern",
+    "stylish"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8c"
+  },
+  "name": "Sharp Line Up",
+  "imageUrl": "https://i.pinimg.com/736x/69/11/bb/6911bb7eeec8a623e0af6947fc21ec6c.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "sharp",
+    "clean",
+    "defined",
+    "barber"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8d"
+  },
+  "name": "Modern Faux Hawk",
+  "imageUrl": "https://i.pinimg.com/736x/0d/f3/f8/0df3f873dfea2c34b68164eae7d90e25.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Undercut",
+  "tags": [
+    "edgy",
+    "modern",
+    "bold",
+    "statement"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8e"
+  },
+  "name": "Textured Side Sweep",
+  "imageUrl": "https://i.pinimg.com/736x/21/ee/a5/21eea5788cdef86b0c28946bf70e053c.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Heart"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "casual",
+    "modern",
+    "youthful",
+    "textured"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a8f"
+  },
+  "name": "Curly High Fade",
+  "imageUrl": "https://i.pinimg.com/736x/08/c9/a1/08c9a199dc98acd453ed2727857714a3.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "contrast",
+    "bold",
+    "urban",
+    "modern"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a90"
+  },
+  "name": "Professional Taper Fade",
+  "imageUrl": "https://i.pinimg.com/736x/32/0a/0c/320a0ce906e6c232044200448ecddeaf.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "professional",
+    "clean",
+    "sharp",
+    "corporate"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a91"
+  },
+  "name": "Textured Long Top",
+  "imageUrl": "https://i.pinimg.com/1200x/7b/8d/ed/7b8ded3cae4d1a36cbd46a27a550930a.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Long",
+  "style": "Textured",
+  "tags": [
+    "flowing",
+    "modern",
+    "artistic",
+    "stylish"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a92"
+  },
+  "name": "Classic Ivy League",
+  "imageUrl": "https://i.pinimg.com/736x/75/34/87/75348781c847d5eb1128e98f4551a4fe.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "preppy",
+    "classic",
+    "clean",
+    "academic"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a93"
+  },
+  "name": "Wavy Textured Quiff",
+  "imageUrl": "https://i.pinimg.com/736x/7e/49/16/7e491601ce9529d2af901857ed90e429.jpg",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Quiff",
+  "tags": [
+    "volume",
+    "textured",
+    "modern",
+    "beach"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a94"
+  },
+  "name": "Textured Curtain Bangs",
+  "imageUrl": "https://i.pinimg.com/736x/48/94/2b/48942b6dd0d32a5445ae6bd84b25b5cb.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Heart"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "youthful",
+    "trendy",
+    "modern",
+    "korean"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a95"
+  },
+  "name": "Modern Textured Crop",
+  "imageUrl": "https://i.pinimg.com/1200x/dd/65/c2/dd65c2d22fe69c54d3d6cc708f605e35.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "modern",
+    "youthful",
+    "low maintenance",
+    "trending"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a96"
+  },
+  "name": "Curly Long Layers",
+  "imageUrl": "https://i.pinimg.com/1200x/97/02/61/970261ee82cd169d8dc85fd6f00a3da7.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Long",
+  "style": "Layered",
+  "tags": [
+    "bohemian",
+    "flowing",
+    "natural",
+    "romantic"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a97"
+  },
+  "name": "Textured Fade with Design",
+  "imageUrl": "https://i.pinimg.com/736x/4f/14/d3/4f14d3884bf29beaf64c843dff848dbf.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "artistic",
+    "creative",
+    "detailed",
+    "barber"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a98"
+  },
+  "name": "Textured Wavy Style",
+  "imageUrl": "https://i.pinimg.com/1200x/c3/85/c3/c385c36183b7b5408cbbf85b913b8ed1.jpg",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Heart",
+    "Round"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "beach",
+    "casual",
+    "effortless",
+    "modern"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a99"
+  },
+  "name": "Sharp High Fade",
+  "imageUrl": "https://i.pinimg.com/736x/37/46/72/374672a53706c0098abf5a84f031f376.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "sharp",
+    "clean",
+    "urban",
+    "trendy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9a"
+  },
+  "name": "Classic Gentleman's Cut",
+  "imageUrl": "https://i.pinimg.com/1200x/ac/c0/d4/acc0d43c7e40bd256fd4ec871f7fd5a4.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Textured",
+  "tags": [
+    "vintage",
+    "gentleman",
+    "elegant",
+    "timeless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9b"
+  },
+  "name": "Textured Curly Fade",
+  "imageUrl": "https://i.pinimg.com/1200x/75/6f/7b/756f7b17c2963455ae860a889a4f57f0.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "contrast",
+    "textured",
+    "urban",
+    "modern"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9c"
+  },
+  "name": "Textured Long Curls",
+  "imageUrl": "https://i.pinimg.com/1200x/f5/c0/7b/f5c07be95fd4203f4785d147b245d668.jpg",
+  "hairType": [
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Long",
+  "style": "Textured",
+  "tags": [
+    "natural",
+    "flowing",
+    "bohemian",
+    "artistic"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9d"
+  },
+  "name": "Sharp Taper Fade",
+  "imageUrl": "https://i.pinimg.com/736x/ae/fa/39/aefa3979779972e15848fa7a2fe45b69.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "sharp",
+    "clean",
+    "professional",
+    "barber"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9e"
+  },
+  "name": "Modern Textured Quiff",
+  "imageUrl": "https://i.pinimg.com/736x/3e/39/9e/3e399e9272521ec449f5bd379c81370a.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Quiff",
+  "tags": [
+    "volume",
+    "modern",
+    "stylish",
+    "trendy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2a9f"
+  },
+  "name": "Textured Afro Fade",
+  "imageUrl": "https://i.pinimg.com/736x/dc/68/8a/dc688a6f872bf27d7ed65ea5ae33ee4e.jpg",
+  "hairType": [
+    "Coily",
+    "Curly"
+  ],
+  "faceShape": [
+    "Oval",
+    "Round"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "natural",
+    "bold",
+    "urban",
+    "cultural"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa0"
+  },
+  "name": "Modern Undercut Style",
+  "imageUrl": "https://i.pinimg.com/736x/58/7b/47/587b479c80d478887aa78819f1194023.jpg",
+  "hairType": [
+    "Straight",
+    "Wavy"
+  ],
+  "faceShape": [
+    "Square",
+    "Oval"
+  ],
+  "hairLength": "Long",
+  "style": "Undercut",
+  "tags": [
+    "modern",
+    "bold",
+    "statement",
+    "edgy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa1"
+  },
+  "name": "Textured Wavy Quiff",
+  "imageUrl": "https://i.pinimg.com/736x/d4/d5/29/d4d5295382e23304c34a166d897c9c75.jpg",
+  "hairType": [
+    "Wavy"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Medium",
+  "style": "Quiff",
+  "tags": [
+    "beach",
+    "casual",
+    "volume",
+    "modern"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa2"
+  },
+  "name": "Sharp Line Up Fade",
+  "imageUrl": "https://i.pinimg.com/736x/0e/00/48/0e00483a012f0c0a7f9b903520ae9768.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "sharp",
+    "defined",
+    "clean",
+    "barber"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa3"
+  },
+  "name": "Classic Barber Cut",
+  "imageUrl": "https://i.pinimg.com/736x/f4/2b/27/f42b27af94c4066ba65f3db203f69c0c.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Textured",
+  "tags": [
+    "vintage",
+    "barber",
+    "clean",
+    "timeless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa4"
+  },
+  "name": "Textured High Fade",
+  "imageUrl": "https://i.pinimg.com/736x/49/e6/d4/49e6d4297a429762a8637be92f0087cb.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "textured",
+    "modern",
+    "urban",
+    "trendy"
+  ],
+  "isTrending": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fd083816a09e7fbd7f2aa5"
+  },
+  "name": "Classic Fade Style",
+  "imageUrl": "https://i.pinimg.com/736x/70/40/3f/70403fc8a34474e8e88b1a910dcd3c24.jpg",
+  "hairType": [
+    "Straight"
+  ],
+  "faceShape": [
+    "Oval",
+    "Square"
+  ],
+  "hairLength": "Short",
+  "style": "Fade",
+  "tags": [
+    "classic",
+    "clean",
+    "professional",
+    "timeless"
+  ],
+  "isTrending": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T17:26:16.617Z"
+  }
+}]
