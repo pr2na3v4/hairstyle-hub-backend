@@ -1,4 +1,19 @@
-firebase-service-account.json
-firebase/
-.env
+# Dependencies
 node_modules/
+
+# Secrets & Config
+.env
+firebase-service-account.json
+*.pem
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
+# Misc
+.DS_Store
+dist/
+build/
+npm-debug.log*
