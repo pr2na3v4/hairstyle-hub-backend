@@ -16,10 +16,9 @@ const app = express();
 
 // 1. Production-ready CORS
 app.use(cors({
-  origin: ["http://127.0.0.1:5500", "https://hairstylehub.netlify.app"],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"] // Required for Firebase tokens
+  origin: "*"
 }));
+
 
 // 2. Body Parser
 app.use(express.json());
