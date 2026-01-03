@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 
 const commentSchema = new mongoose.Schema({
-    haircutId: { type: String, required: true, index: true }, // Added index for faster searching
+    haircutId: { type: mongoose.Schema.Types.ObjectId,
+  ref: 'Haircut', required: true, index: true }, // Added index for faster searching
     text: { type: String, required: true },
     userName: String,
     userPhoto: String,

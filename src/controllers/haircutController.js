@@ -34,29 +34,47 @@ export const createHaircut = async (req, res) => {
 };
 
 // ---------------- Update haircut ----------------
+// This is your function to edit a haircut
 export const updateHaircut = async (req, res) => {
-  try {
-    const updated = await Haircut.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-    if (!updated) return res.status(404).json({ message: "Not found" });
+    try {
+        const { id } = req.params;      // The ID of the haircut
+        const { name } = req.body;    // The NEW name you typed in
 
-    res.json(updated);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
+        // 1. Update the Haircut name first
+        const updatedHaircut = await Haircut.findByIdAndUpdate(id, { name }, { new: true });
+
+        // 2. NOW: Tell all comments to change the name too!
+        // This says: "Find every comment with this haircutId and change its haircutName"
+        await Comment.updateMany(
+            { haircutId: id }, 
+            { haircutName: name } 
+        );
+
+        res.status(200).json({ message: "Updated everything successfully!" });
+
+    } catch (error) {
+        res.status(500).json({ message: "Something went wrong" });
+    }
 };
 
 // ---------------- Delete haircut ----------------
 export const deleteHaircut = async (req, res) => {
-  try {
-    const deleted = await Haircut.findByIdAndDelete(req.params.id);
-    if (!deleted) return res.status(404).json({ message: "Not found" });
+    try {
+        const { id } = req.params;
 
-    res.json({ message: "Haircut deleted" });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
+        // 1. Delete the Haircut
+        await Haircut.findByIdAndDelete(id);
+
+        // 2. NOW: Delete all comments that belonged to that haircut
+        // This says: "Find every comment that has this haircutId and remove it"
+        await Comment.deleteMany({ haircutId: id });
+
+        // 3. (Optional) Delete all "Likes" for that haircut too
+        await Like.deleteMany({ haircutId: id });
+
+        res.status(200).json({ message: "Haircut and all related data deleted!" });
+
+    } catch (error) {
+        res.status(500).json({ message: "Error deleting haircut" });
+    }
 };
