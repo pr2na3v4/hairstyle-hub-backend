@@ -2,7 +2,8 @@ import express from 'express';
 import { 
     getProfile, 
     getUserLikes, 
-    getUserComments 
+    getUserComments, 
+    syncUser
 } from '../controllers/userController.js';
 import verifyFirebaseToken from '../middleware/authMiddleware.js';
 
