@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 import haircutRoutes from "./routes/haircutRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
-
+import userRoutes from "./routes/userRoutes.js"; // 1. ADD THIS IMPORT
 dotenv.config();
 
 // Connect to MongoDB
@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 app.use("/api/haircuts", haircutRoutes); 
 app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
-
+app.use("/api/users", userRoutes); // 2. ADD THIS LINE (Links /api/users to your userRoutes.js)
 // 5. 404 Handler (For non-existent routes)
 app.use((req, res, next) => {
   res.status(404).json({ message: `Route not found - ${req.originalUrl}` });
