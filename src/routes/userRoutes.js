@@ -14,6 +14,6 @@ router.use(verifyFirebaseToken);
 router.get('/me', getProfile);
 router.get('/me/likes', getUserLikes);
 router.get('/me/comments', getUserComments);
-router.post("/sync", firebaseAuth, syncUser);
-
+// Change "firebaseAuth" to "verifyFirebaseToken"
+router.post("/sync", verifyFirebaseToken, syncUser);
 export default router;
