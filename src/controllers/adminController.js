@@ -24,3 +24,22 @@ export const addHaircutViaLink = async (req, res) => {
         res.status(500).json({ message: "Error aala bhava!", error: error.message });
     }
 };
+// Sagle haircuts list karnyathi
+export const getAllStyles = async (req, res) => {
+    try {
+        const styles = await Haircut.find().sort({ createdAt: -1 });
+        res.status(200).json(styles);
+    } catch (error) {
+        res.status(500).json({ message: "Data milala nahi!" });
+    }
+};
+
+// Haircut delete karnyathi
+export const deleteHaircut = async (req, res) => {
+    try {
+        await Haircut.findByIdAndDelete(req.params.id);
+        res.status(200).json({ message: "Style delete jhali!" });
+    } catch (error) {
+        res.status(500).json({ message: "Delete karta aale nahi!" });
+    }
+};
