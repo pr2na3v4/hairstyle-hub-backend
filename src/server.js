@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
-
+import adminRoutes from "./routes/adminRoutes.js";
 import haircutRoutes from "./routes/haircutRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 // Note: Like logic is handled inside haircutRoutes.js via /api/haircuts/:id/like
 app.use("/api/haircuts", haircutRoutes); 
 app.use("/api/comments", commentRoutes);
+app.use('/api/admin', adminRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes); // 2. ADD THIS LINE (Links /api/users to your userRoutes.js)
 // 5. 404 Handler (For non-existent routes)
