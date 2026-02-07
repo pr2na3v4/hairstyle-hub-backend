@@ -33,19 +33,23 @@ export const getLikeStatus = async (req, res) => {
         const { id } = req.params;
         const userId = req.user?.uid || null;
 
-        // 💡 Conversion for query safety
+        // 💡 1. String id la ObjectID madhe convert kara
         const hId = new mongoose.Types.ObjectId(id);
 
         const [haircut, like] = await Promise.all([
             Haircut.findById(id).select('likesCount').lean(),
-            userId ? Like.findOne({ haircutId: hId, userId }).lean() : null
+            // 💡 2. Query madhe converted hId vapra
+            userId ? Like.findOne({ haircutId: hId, userId: userId }).lean() : null
         ]);
+
+        console.log("Found Like in DB:", like); // Backend console madhe check kara
 
         res.json({
             likesCount: haircut?.likesCount || 0,
-            hasLiked: !!like // true if record exists, else false
+            hasLiked: !!like // Jar 'like' object sapdla tar true hoil
         });
     } catch (error) {
+        console.error("Backend Error:", error);
         res.status(500).json({ message: "Error fetching status" });
     }
 };
