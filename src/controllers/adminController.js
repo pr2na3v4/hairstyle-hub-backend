@@ -3,22 +3,22 @@ import Haircut from '../models/Haircut.js';
 // 1. Navin Haircut Add Karne
 export const addHaircutViaLink = async (req, res) => {
     try {
-        const { name, imageUrl, faceShape, hairLength, tags, isTrending, style, description } = req.body;
+        // ✅ इकडे 'haircutType' ॲड केला आहे
+        const { haircutType, name, imageUrl, faceShape, hairLength, tags, isTrending, style, description } = req.body;
 
-        // 1. Basic Validation
-        if (!name || !imageUrl || !hairLength) {
-            return res.status(400).json({ message: "Name, Image URL, and Hair Length are mandatory!" });
+        // 1. Basic Validation (haircutType पण चेक करा)
+        if (!haircutType || !name || !imageUrl || !hairLength) {
+            return res.status(400).json({ message: "Haircut Type, Name, Image URL, and Hair Length are mandatory!" });
         }
 
-        // 2. Duplicate Check: सेम नावाचा हेअरकट आधीच आहे का?
+        // 2. Duplicate Check
         const existingHaircut = await Haircut.findOne({ name: { $regex: new RegExp(`^${name}$`, 'i') } }); 
-        // i flag मुळे 'Buzz Cut' आणि 'buzz cut' दोन्ही सेम मानले जातील.
         
         if (existingHaircut) {
             return res.status(400).json({ message: "हा हेअरकट आधीच डेटाबेसमध्ये आहे!" });
         }
 
-        // 3. Tags Processing: String ला Array मध्ये रूपांतरित करणे
+        // 3. Tags Processing
         let processedTags = [];
         if (tags && typeof tags === 'string') {
             processedTags = tags.split(',').map(t => t.trim()).filter(t => t !== "");
@@ -27,7 +27,7 @@ export const addHaircutViaLink = async (req, res) => {
         }
 
         const newHaircut = new Haircut({
-            haircutType,
+            haircutType, // ✅ आता हा 'defined' आहे
             name,
             imageUrl,
             faceShape: Array.isArray(faceShape) ? faceShape : [],
@@ -42,6 +42,7 @@ export const addHaircutViaLink = async (req, res) => {
         res.status(201).json({ message: "Style successfully add झाली!", data: savedHaircut });
 
     } catch (error) {
+        console.error("Backend Error Log:", error); // सर्व्हरच्या टर्मिनलमध्ये एरर दिसेल
         res.status(500).json({ message: "Server Error: स्टाईल ॲड करता आली नाही.", error: error.message });
     }
 };
