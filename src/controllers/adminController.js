@@ -5,9 +5,25 @@ export const addHaircutViaLink = async (req, res) => {
     try {
         const { name, imageUrl, faceShape, hairLength, tags, isTrending, style, description } = req.body;
 
-        // Basic Validation
+        // 1. Basic Validation
         if (!name || !imageUrl || !hairLength) {
             return res.status(400).json({ message: "Name, Image URL, and Hair Length are mandatory!" });
+        }
+
+        // 2. Duplicate Check: सेम नावाचा हेअरकट आधीच आहे का?
+        const existingHaircut = await Haircut.findOne({ name: { $regex: new RegExp(`^${name}$`, 'i') } }); 
+        // i flag मुळे 'Buzz Cut' आणि 'buzz cut' दोन्ही सेम मानले जातील.
+        
+        if (existingHaircut) {
+            return res.status(400).json({ message: "हा हेअरकट आधीच डेटाबेसमध्ये आहे!" });
+        }
+
+        // 3. Tags Processing: String ला Array मध्ये रूपांतरित करणे
+        let processedTags = [];
+        if (tags && typeof tags === 'string') {
+            processedTags = tags.split(',').map(t => t.trim()).filter(t => t !== "");
+        } else if (Array.isArray(tags)) {
+            processedTags = tags;
         }
 
         const newHaircut = new Haircut({
@@ -15,16 +31,17 @@ export const addHaircutViaLink = async (req, res) => {
             imageUrl,
             faceShape: Array.isArray(faceShape) ? faceShape : [],
             hairLength,
-            tags: typeof tags === 'string' ? tags.split(',').map(t => t.trim()) : tags,
+            tags: processedTags,
             isTrending: isTrending === true || isTrending === 'true',
             style,
             description
         });
 
         const savedHaircut = await newHaircut.save();
-        res.status(201).json({ message: "Style added successfully!", data: savedHaircut });
+        res.status(201).json({ message: "Style successfully add झाली!", data: savedHaircut });
+
     } catch (error) {
-        res.status(500).json({ message: "Error adding style", error: error.message });
+        res.status(500).json({ message: "Server Error: स्टाईल ॲड करता आली नाही.", error: error.message });
     }
 };
 
