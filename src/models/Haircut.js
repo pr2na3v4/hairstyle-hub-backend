@@ -1,6 +1,13 @@
 import mongoose from 'mongoose';
 
 const haircutSchema = new mongoose.Schema({
+    // Main Grouping (e.g., Textured Pixie)
+    haircutType: { 
+        type: String, 
+        required: true, 
+        trim: true 
+    },
+    // Specific Variant Name (e.g., Classic Textured Pixie)
     name: { 
         type: String, 
         required: true, 
@@ -12,36 +19,33 @@ const haircutSchema = new mongoose.Schema({
         required: true 
     },
     
-    // 1st Column: Face Shapes (Multi-select sathi Array)
+    // 1st Column: Face Shapes
     faceShape: { 
         type: [String], 
-        enum: ['Oval', 'Square', 'Round', 'Diamond', 'Heart'], // Flowchart nusar
+        enum: ['Oval', 'Square', 'Round', 'Diamond', 'Heart'],
         default: [] 
     }, 
 
-    // 2nd Column: Hair Length (Dropdown sathi String)
+    // 2nd Column: Hair Length
     hairLength: { 
         type: String, 
-        enum: ['Short', 'Medium', 'Long'], // Flowchart nusar fixed values
+        enum: ['Short', 'Medium', 'Long'],
         default: 'Medium',
         required: true
     },
 
-    // 3rd Column: Extra Details
+    // Extra Details & Metadata
     tags: { type: [String], default: [] },
     isTrending: { type: Boolean, default: false },
-    
-    // Additional info (preserved from your code)
-    hairType: { type: [String], default: [] }, 
     description: String,
-    style: String,
+    style: String, 
     likesCount: { type: Number, default: 0 }
 }, { 
     timestamps: true 
 });
 
-// Performance sathi indexes
-haircutSchema.index({ faceShape: 1, hairLength: 1 });
+// Indexes for super fast searching
+haircutSchema.index({ faceShape: 1, hairLength: 1, haircutType: 1 });
 haircutSchema.index({ name: 'text', tags: 'text' });
 
 const Haircut = mongoose.model('Haircut', haircutSchema);
