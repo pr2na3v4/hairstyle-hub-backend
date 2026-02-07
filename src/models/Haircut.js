@@ -4,34 +4,43 @@ const haircutSchema = new mongoose.Schema({
     name: { 
         type: String, 
         required: true, 
-        trim: true  // Cleans up accidental spaces
+        trim: true 
     },
     imageUrl: { 
         type: String, 
         required: true 
     },
     
-    // Using [] means it can hold multiple values (like "Round" and "Oval")
-    hairType: { type: [String], default: [] }, 
-    faceShape: { type: [String], default: [] }, 
-    tags: { type: [String], default: [] },
+    // 1st Column: Face Shapes (Multi-select sathi Array)
+    faceShape: { 
+        type: [String], 
+        enum: ['Oval', 'Square', 'Round', 'Diamond', 'Heart'], // Flowchart nusar
+        default: [] 
+    }, 
 
-    hairLength: { type: String, default: 'Medium' }, 
-    description: String,
-    style: String,
-    
-    // isTrending is like a switch: true (on) or false (off)
+    // 2nd Column: Hair Length (Dropdown sathi String)
+    hairLength: { 
+        type: String, 
+        enum: ['Short', 'Medium', 'Long'], // Flowchart nusar fixed values
+        default: 'Medium',
+        required: true
+    },
+
+    // 3rd Column: Extra Details
+    tags: { type: [String], default: [] },
     isTrending: { type: Boolean, default: false },
     
-    // This counts how many people liked it
+    // Additional info (preserved from your code)
+    hairType: { type: [String], default: [] }, 
+    description: String,
+    style: String,
     likesCount: { type: Number, default: 0 }
 }, { 
-    // This automatically adds the date the haircut was created
     timestamps: true 
 });
 
-// These lines below make your search bar and filters work super fast!
-haircutSchema.index({ faceShape: 1, hairType: 1 });
+// Performance sathi indexes
+haircutSchema.index({ faceShape: 1, hairLength: 1 });
 haircutSchema.index({ name: 'text', tags: 'text' });
 
 const Haircut = mongoose.model('Haircut', haircutSchema);

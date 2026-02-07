@@ -62,4 +62,13 @@ const verifyFirebaseToken = async (req, res, next) => {
     }
 };
 
+export const isAdmin = (req, res, next) => {
+  const adminEmail = "pranavkashid08@gmail.com"; // 👈 Ithe tuzha main Google email taka
+  
+  if (req.user && req.user.email === adminEmail) {
+    next();
+  } else {
+    res.status(403).json({ message: "Access Denied: Admin only!" });
+  }
+};
 export default verifyFirebaseToken
