@@ -27,6 +27,7 @@ export const addHaircutViaLink = async (req, res) => {
         }
 
         const newHaircut = new Haircut({
+            haircutType,
             name,
             imageUrl,
             faceShape: Array.isArray(faceShape) ? faceShape : [],
