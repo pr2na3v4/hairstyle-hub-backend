@@ -1,7 +1,6 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const analyticsController = require('../controllers/analyticsController');
-
+import analyticsController from '../controllers/analyticsController.js';
 // POST /api/analytics/save-face-data
 router.post('/save-face-data', analyticsController.saveFaceData);
 

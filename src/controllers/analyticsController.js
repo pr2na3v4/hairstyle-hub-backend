@@ -1,6 +1,5 @@
 const FaceAnalysis = require('../models/FaceAnalysis');
-
-exports.saveFaceData = async (req, res) => {
+saveFaceData = async (req, res) => {
   try {
     const { 
       detected_shape, 
@@ -39,4 +38,8 @@ exports.saveFaceData = async (req, res) => {
     console.error("Analytics Storage Error:", error);
     res.status(500).json({ error: "Internal server error during data collection." });
   }
+};
+
+export default {
+  saveFaceData
 };
