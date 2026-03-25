@@ -6,6 +6,7 @@ import adminRoutes from "./routes/adminRoutes.js";
 import haircutRoutes from "./routes/haircutRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import analyticsRoutes from "./routes/analyticsRoutes.js";
 import userRoutes from "./routes/userRoutes.js"; // 1. ADD THIS IMPORT
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.get("/", (req, res) => {
 app.use("/api/haircuts", haircutRoutes); 
 app.use("/api/comments", commentRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/analytics', analyticsRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes); // 2. ADD THIS LINE (Links /api/users to your userRoutes.js)
 // 5. 404 Handler (For non-existent routes)
