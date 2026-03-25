@@ -1,4 +1,4 @@
-const FaceAnalysis = require('../models/FaceAnalysis');
+import FaceAnalysis from '../models/FaceAnalysis.js';
 saveFaceData = async (req, res) => {
   try {
     const { 

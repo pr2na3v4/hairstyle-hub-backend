@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-
+import mongoose from 'mongoose';
 const FaceAnalysisSchema = new mongoose.Schema({
   detected_shape: { 
     type: String, 
@@ -19,4 +18,4 @@ const FaceAnalysisSchema = new mongoose.Schema({
   timestamp: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('FaceAnalysis', FaceAnalysisSchema);
+export default mongoose.model('FaceAnalysis', FaceAnalysisSchema);
