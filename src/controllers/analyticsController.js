@@ -1,5 +1,5 @@
 import FaceAnalysis from '../models/FaceAnalysis.js';
-saveFaceData = async (req, res) => {
+const saveFaceData = async (req, res) => {
   try {
     const { 
       detected_shape, 
