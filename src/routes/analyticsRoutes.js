@@ -5,4 +5,4 @@ const analyticsController = require('../controllers/analyticsController');
 // POST /api/analytics/save-face-data
 router.post('/save-face-data', analyticsController.saveFaceData);
 
-module.exports = router;
+export default router;
