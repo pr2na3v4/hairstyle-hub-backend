@@ -7,7 +7,8 @@ import haircutRoutes from "./routes/haircutRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
-import userRoutes from "./routes/userRoutes.js"; // 1. ADD THIS IMPORT
+import userRoutes from "./routes/userRoutes.js";
+
 dotenv.config();
 
 // Connect to MongoDB
@@ -15,43 +16,39 @@ connectDB();
 
 const app = express();
 
-// 1. Production-ready CORS
-app.use(cors({
-  origin: "*"
-}));
+// CORS
+app.use(cors({ origin: "*" }));
 
-
-// 2. Body Parser
+// Body parser
 app.use(express.json());
 
-// 3. Health Check
+// Health check
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-// 4. API Routes
-// Note: Like logic is handled inside haircutRoutes.js via /api/haircuts/:id/like
-app.use("/api/haircuts", haircutRoutes); 
-app.use("/api/comments", commentRoutes);
-app.use('/api/admin', adminRoutes);
-app.use('/api/analytics', analyticsRoutes);
-app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes); // 2. ADD THIS LINE (Links /api/users to your userRoutes.js)
-// 5. 404 Handler (For non-existent routes)
-app.use((req, res, next) => {
-  res.status(404).json({ message: `Route not found - ${req.originalUrl}` });
+// Routes
+app.use("/api/haircuts",  haircutRoutes);
+app.use("/api/comments",  commentRoutes);
+app.use("/api/admin",     adminRoutes);
+app.use("/api/face-analysis", analyticsRoutes);
+app.use("/api/auth",      authRoutes);
+app.use("/api/users",     userRoutes);
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({ message: `Route not found — ${req.originalUrl}` });
 });
 
-// 6. Global Error Handler (Prevents server from crashing and sends JSON to frontend)
+// Global error handler
 app.use((err, req, res, next) => {
   console.error("Server Error:", err.stack);
   const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
-  res.status(statusCode).json({
-    error: err.message || "Internal Server Error"
-  });
+  res.status(statusCode).json({ error: err.message || "Internal Server Error" });
 });
 
-const PORT = process.env.PORT;
+// PORT fallback prevents crash if env var is missing on Render
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
