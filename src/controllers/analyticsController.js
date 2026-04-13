@@ -25,7 +25,7 @@ const saveFaceData = async (req, res) => {
 
     res.status(201).json({
       status: "success",
-      message: "Anonymized metrics stored for AI improvement.",
+      message: "Anonymized metrics stored for AI improvements.",
     });
   } catch (error) {
     console.error("Analytics Storage Error:", error);
