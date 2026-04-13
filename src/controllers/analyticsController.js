@@ -1,22 +1,15 @@
 import FaceAnalysis from '../models/FaceAnalysis.js';
+
 const saveFaceData = async (req, res) => {
   try {
-    const { 
-      detected_shape, 
-      confidence, 
-      lw_ratio, 
-      fc_ratio, 
-      jc_ratio, 
-      fj_ratio, 
-      user_consent 
+    const {
+      detected_shape,
+      confidence,
+      lw_ratio,
+      fc_ratio,
+      jc_ratio,
+      fj_ratio,
     } = req.body;
-
-    // Strict Privacy Gate: If no consent, we don't even touch the DB
-    if (!user_consent) {
-      return res.status(202).json({ 
-        message: "Data received but discarded due to lack of user consent." 
-      });
-    }
 
     const analysisEntry = new FaceAnalysis({
       detected_shape,
@@ -25,14 +18,14 @@ const saveFaceData = async (req, res) => {
       fc_ratio,
       jc_ratio,
       fj_ratio,
-      user_consent
+      user_consent: true,
     });
 
     await analysisEntry.save();
 
-    res.status(201).json({ 
-      status: "success", 
-      message: "Anonymized metrics stored for AI improvement." 
+    res.status(201).json({
+      status: "success",
+      message: "Anonymized metrics stored for AI improvement.",
     });
   } catch (error) {
     console.error("Analytics Storage Error:", error);
