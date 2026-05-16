@@ -19,7 +19,7 @@ router.get('/me', getProfile);
 router.get('/me/likes', getUserLikes);
 router.get('/me/comments', getUserComments);
 
-// CLEANED: Removed duplicate verifyFirebaseToken invocation
+// CLEANED: Removed Duplicate verifyFirebaseToken invocation
 router.post("/sync", syncUser);
 
 // SECURED: Moved inside auth boundaries & streamlined data capture
