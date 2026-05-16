@@ -123,7 +123,7 @@ export const getTips = async (req, res) => {
     });
 
   } catch (error) {
-    console.error("❌ Error running smart tips algorithm matrix:", error);
+    console.error("❌ error running smart tips algorithm matrix:", error);
     return res.status(500).json({
       success: false,
       message: "Server error occurred while executing smart matching calculations."
