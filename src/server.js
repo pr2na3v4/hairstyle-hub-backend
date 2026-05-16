@@ -8,7 +8,7 @@ import commentRoutes from "./routes/commentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
-
+import tipRoutes from './routes/tipRoutes.js';
 dotenv.config();
 
 // Connect to MongoDB
@@ -34,7 +34,7 @@ app.use("/api/admin",     adminRoutes);
 app.use("/api/face-analysis", analyticsRoutes);
 app.use("/api/auth",      authRoutes);
 app.use("/api/users",     userRoutes);
-
+app.use('/api/tips', tipRoutes);
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ message: `Route not found — ${req.originalUrl}` });

@@ -33,7 +33,10 @@ const haircutSchema = new mongoose.Schema({
         default: 'Medium',
         required: true
     },
-
+    // 3rd Column: tips for Hair Type
+    tips: { type: [String], 
+        required: true
+     },
     // Extra Details & Metadata
     tags: { type: [String], default: [] },
     isTrending: { type: Boolean, default: false },
