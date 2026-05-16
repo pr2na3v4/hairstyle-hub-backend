@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ error: err.message || "Internal Server Error" });
 });
 
-// PORT fallback prevents crash if Env var is missing on Render
+// PORT fallback Prevents crash if Env var is missing on Render
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
