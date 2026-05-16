@@ -31,7 +31,7 @@ router.put('/update-face-shape', async (req, res) => {
     const email = req.user?.email; 
 
     if (!email) {
-        return res.status(401).json({ error: "Unauthorized: Active token session email not found." });
+        return res.status(401).json({ error: "Unauthorized: Active token session email not founded." });
     }
 
     try {
