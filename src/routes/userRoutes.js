@@ -6,7 +6,7 @@ import {
     syncUser
 } from '../controllers/userController.js';
 import verifyFirebaseToken from '../middleware/authMiddleware.js';
-const User = require('../models/User');
+import User from '../models/User';
 
 const router = express.Router();
 router.put('/update-face-shape', async (req, res) => {
