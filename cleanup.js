@@ -7,7 +7,7 @@ dotenv.config();
 
 const fixLikes = async () => {
     try {
-        // 1. Connect to your Database
+        // 1. Cnnect to your Database
         await mongoose.connect(process.env.MONGO_URI);
         console.log("Connected to MongoDB...");
 
