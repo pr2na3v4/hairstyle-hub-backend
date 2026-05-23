@@ -28,13 +28,13 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-apiRouter.use("/haircuts", haircutRoutes);
-apiRouter.use("/comments", commentRoutes); // Fixed the spacing syntax cleanly to /comments
-apiRouter.use("/admin", adminRoutes);
-apiRouter.use("/face-analysis", analyticsRoutes);
-apiRouter.use("/auth", authRoutes);
-apiRouter.use("/users", userRoutes);
-apiRouter.use('/tips', tipRoutes);
+app.use("/haircuts", haircutRoutes);
+app.use("/comments", commentRoutes); // Fixed the spacing syntax cleanly to /comments
+app.use("/admin", adminRoutes);
+app.use("/face-analysis", analyticsRoutes);
+app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
+app.use('/tips', tipRoutes);
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ message: `Route not found — ${req.originalUrl}` });
