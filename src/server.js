@@ -28,13 +28,13 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use("/api/haircuts",  haircutRoutes);
-app.use("/api/comments",  commentRoutes);
-app.use("/api/admin",     adminRoutes);
-app.use("/api/face-analysis", analyticsRoutes);
-app.use("/api/auth",      authRoutes);
-app.use("/api/users",     userRoutes);
-app.use('/api/tips', tipRoutes);
+apiRouter.use("/haircuts", haircutRoutes);
+apiRouter.use("/comments", commentRoutes); // Fixed the spacing syntax cleanly to /comments
+apiRouter.use("/admin", adminRoutes);
+apiRouter.use("/face-analysis", analyticsRoutes);
+apiRouter.use("/auth", authRoutes);
+apiRouter.use("/users", userRoutes);
+apiRouter.use('/tips', tipRoutes);
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ message: `Route not found — ${req.originalUrl}` });
@@ -51,5 +51,5 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`server running on port ${PORT}`);
 });
